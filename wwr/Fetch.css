@@ -11,12 +11,16 @@ main {
     text-align: center;
     color: white;
     cursor: url('Webp.net-resizeimage.png'), auto;
-    size: 100%;
+    size: 120%;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     display: grid;
     grid-template-columns: 1px 223px 1fr;
+    font-size: 69px;
 }
-
+a {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 100px;
+}
 img {
     width: 55%;
 }
@@ -24,6 +28,7 @@ img {
 li:hover {
     width: 200em;
     cursor: url('thing.png'), auto;
+    
 }
 
 
