@@ -183,9 +183,10 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover {
+footer h3 a:hover {
     color: #2B2D42;
     background-color: var(--secondary-color);
+    padding: .5em;
 }
 
 footer h3 a:hover {
