@@ -34,44 +34,20 @@ main img {
     max-width: 100%;
 }
 
-header {
-    width: 100%;
-    /* display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
-    background-color: var(--primary-color);
-}
-/* header img{
-    width: 100%;
-} */
-
 nav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: left;
-    display: inline;
-}
-a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-}
-/* nav a {
-    text-align: center;
-    padding: 35px;
-    background-color: var(--accent2-color);
-    color: var(--primary-color);
-    text-decoration: none;
+    width: 100%;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-} */
-/* .ig{
-    grid-column: 3/4;
-} */
-
-footer{
+header {
+    width: 90%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: var(--primary-color);
+    /* display: grid;
+    grid-template-columns: 150px auto; */
+}
+
+header img{
+    width: 100%;
+    grid-row:1/3;
 }
