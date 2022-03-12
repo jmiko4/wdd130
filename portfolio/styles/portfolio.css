@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@600&display=swap');
-/* 
-*{
+
+/* *{
     border:2px solid black;
 } */
 
@@ -55,6 +55,7 @@ main {
 
 .main{
     background-color: var(--primary-color);
+    padding:1.5em;
 }
 
 .portfolio_txt {
@@ -87,7 +88,7 @@ main {
 }
 
 #portfolios img:hover {
-    transition:0.25s;
+    transition:.25s;
     opacity: 1;
 }
 
@@ -95,7 +96,6 @@ main {
     display:grid;
     grid-template-columns: .25fr 1fr .25fr;
     grid-template-rows:1fr 1fr;
-    width: 100%;
 }
 
 .social-container {
@@ -109,9 +109,21 @@ main {
     padding: 2em;
     /* grid-template-columns:1fr 1fr 1fr; */
 }
+#social-container {
+    width: 80%;
+    display:flex;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    /* grid-template-columns:1fr 1fr 1fr; */
+}
 
 .social-container img{
     width: 50%;
+}
+
+#social-container img{
+    width:50%;
 }
 
 .paragraph-container{
@@ -123,6 +135,39 @@ main {
     font-size:1.3em;
 }
 
+#about-container {
+    display:grid;
+    grid-template-columns: 1fr .5fr 1fr;
+    width: 100%;
+}
+
+#pic-container {
+    display: inline;
+    width: 100%;
+}
+
+#pic-container img{
+    width: 80%;
+}
+
+.info-container {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+}
+
+#intro-container {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    margin-left: -3em;
+}
+
+#intro-container h2{
+    text-shadow: 2px 2px 5px black;
+}
+
+#ab-fb{
+    width: 100%;
+}
 
 /* .background-image img {
     max-width: 100%;
