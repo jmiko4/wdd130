@@ -33,6 +33,7 @@ body {
     padding:0;
     max-width: 100%;
     width: 100%;
+    margin:0;
 }
 #home-page-body {
     background-image: url("../images/MIKO0764.jpg");
@@ -201,16 +202,8 @@ main {
     max-width: 25%;
     padding: 0 4px;
 }
-
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 700px) {
-  .portfolio_column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
+.topnav{display:none;}
+/* mobile */
 @media screen and (max-width:700px) {
     #portfolios{
         grid-row: 2/3;
@@ -228,6 +221,55 @@ main {
         width: 100%;
         vertical-align: middle;
         opacity:1;
+    }
+
+    .portfolio_column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    #navbar{display: none;}
+
+    #topnav{
+        display:show;
+        overflow: hidden;
+        background-color: var(--primary-color);
+        position: relative;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: var(--secondary-color);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: var(--primary-color);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: var(--accent2-color);
+        color: var(--secondary-color);
     }
 }
 
