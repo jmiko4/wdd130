@@ -234,7 +234,7 @@ main {
     .topnav{
         display:block;
         overflow: hidden;
-        background-color: var(--primary-color);
+        /* background-color: var(--primary-color); */
         position: relative;
     }
 
@@ -256,7 +256,7 @@ main {
 
     /* Style the hamburger menu */
     .topnav a.icon {
-        background: var(--accent2-color);
+        /* background: var(--accent2-color); */
         display: block;
         position: absolute;
         right: 0;
@@ -265,17 +265,18 @@ main {
     }
     .fa-fa-bars img{
         width: 50%;
+        filter:invert(1);
     }
 
     /* Add a grey background color on mouse-over */
     .topnav a:hover {
-        background-color: var(--primary-color);
+        /* background-color: var(--primary-color); */
         color: var(--primary-color);
     }
 
     /* Style the active link (or home/logo) */
     .active {
-        background-color: var(--primary-color);
+        /* background-color: var(--primary-color); */
         color: var(--primary-color);
     }
 }
