@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@600&display=swap');
-/* 
+
 *{
     border:2px solid black;
-} */
+}
 
 :root {
 
@@ -13,20 +13,6 @@
 
     --heading-font: "Raleway";
     --paragraph-font: Poppins, Helvetica, sans-serif;
-
-    --headline-color-on-white: var(--primary-color);
-    /* headlines on a white background */
-    --headline-color-on-color: white;
-    /* headlines on a colored background */
-    --paragraph-color-on-white: var(--primary-color);
-    /* paragraph text on a white background */
-    --paragraph-color-on-color: white;
-    /* paragraph text on a colored background */
-    --paragraph-background-color: var(--primary-color);
-    --nav-link-color: var(--primary-color);
-    --nav-background-color: var(--accent2-color);
-    --nav-hover-link-color: var(--primary-color);
-    --nav-hover-background-color: var(--accent1-color);
 }
 
 body {
@@ -62,10 +48,22 @@ main {
 .portfolio_main{
     background-color: var(--primary-color);
     padding: 1.5em;
+    grid-template-rows: .1fr 6fr .1fr;
 }
 
 .portfolio_txt {
     text-shadow: 3px 3px 5px black;
+}
+
+.page-nav{
+    align-self: center;
+    /* margin-top:10em; */
+}
+.page-nav #next-page{
+    font-family: var(--heading-font);
+    float: right;
+    padding:2em;
+    font-size: 1.5em;
 }
 
 .title {
@@ -188,21 +186,188 @@ main {
 
 
 }
-.portfolio_column img{
+.portfolio-column img{
     width:100%;
     /* flex: 25%; */
     /* padding:.5em; */
     vertical-align: middle;
     margin-top: 8px;
-    animation: 1s ease-out 0s 1 slideInLeft;
-    /* background: #666; */
-    /* padding: 40px; */
+    animation: ease-in 1s;
 }
-.portfolio_column{
+
+/* .lazyImageError img,
+.lazyImageWaiting img {
+    opacity:0;
+    transform:scale(0);
+    transition:none;
+}
+
+.lazyImageError:after {
+    content:"Image Not Found";
+    box-sizing:border-box;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:1em;
+    background:#FF4;
+    color:#F00;
+    border:0.5em dashed #F00;
+    transform:scale(0);
+    transition:transform 0.5s;
+}
+.lazyImageErrorShow:after {
+    transform:scale(1);
+} */
+
+
+
+.portfolio-column{
     flex:22%;
     max-width: 25%;
     padding: 0 4px;
+    /* padding-bottom: 75%; */
 }
+
+
+
+.portfolio > .portfolio-column {
+  padding: 0 8px;
+}
+
+.portfolio:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.portfolio-column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
 .topnav{display:none;}
 /* mobile */
 @media screen and (max-width:700px) {
@@ -224,7 +389,13 @@ main {
         opacity:1;
     }
 
-    .portfolio_column {
+    .portfolio_main{
+        background-color: var(--primary-color);
+        padding: 1.5em;
+        grid-template-rows: .1fr 11fr .1fr;
+    }
+
+    .portfolio-column {
         flex: 100%;
         max-width: 100%;
     }
