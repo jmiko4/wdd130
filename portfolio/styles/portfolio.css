@@ -117,8 +117,9 @@ main {
     width: 80%;
     display:flex;
     margin: 0;
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
+
     /* grid-template-columns:1fr 1fr 1fr; */
 }
 
@@ -158,6 +159,7 @@ main {
 .info-container {
     font-family: var(--paragraph-font);
     color: var(--secondary-color);
+    padding-top: 1em;
 }
 
 #intro-container {
@@ -171,6 +173,12 @@ main {
 }
 
 #ab-fb{
+    width: 110%;
+}
+#ab-ig{
+    width: 90%;
+}
+#ab-email{
     width: 100%;
 }
 
@@ -571,21 +579,21 @@ footer img {
     grid-row: 1/2;
 }
 
-#email {
+.email {
     grid-column: 4/5;
     grid-row: 2/3;
     width: 90%;
     margin: 0 auto;
 }
 
-#ig {
+.ig {
     grid-column: 2/3;
     grid-row: 2/3;
     width: 70%;
     margin: 0 auto;
 }
 
-#fb {
+.fb {
     grid-column: 3/4;
     grid-row: 2/3;
     margin-left: -5px;
