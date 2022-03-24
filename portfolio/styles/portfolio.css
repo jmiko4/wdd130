@@ -23,7 +23,7 @@ body {
 }
 
 #home-page-body {
-    background-image: url("../images/MIKO0764.jpg");
+    background-image: url("../images/dunes_2.jpg");
     background-color: var(--primary-color);
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -91,12 +91,14 @@ main {
 #portfolios img {
     width: 90%;
     margin: 0 auto;
-    opacity: .87;
+    opacity: .9;
+    transition: width .25s;
 }
 
 #portfolios img:hover {
-    transition: .25s;
+    transition: width .25s;
     opacity: 1;
+    width: 91%;
 }
 
 #contact-container {
