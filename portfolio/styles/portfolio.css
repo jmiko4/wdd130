@@ -16,11 +16,12 @@
 }
 
 body {
-    padding:0;
+    padding: 0;
     max-width: 100%;
     width: 100%;
-    margin:0;
+    margin: 0;
 }
+
 #home-page-body {
     background-image: url("../images/MIKO0764.jpg");
     background-color: var(--primary-color);
@@ -29,6 +30,7 @@ body {
     background-position: center top;
     background-size: cover;
 }
+
 main {
     font-family: var(--heading-font);
     /* background-color: var(--primary-color); */
@@ -40,12 +42,12 @@ main {
     grid-template-rows: .1fr 1fr;
 }
 
-.main{
+.main {
     background-color: var(--primary-color);
-    padding:1.5em;
+    padding: 1.5em;
 }
 
-.portfolio_main{
+.portfolio_main {
     background-color: var(--primary-color);
     padding: 1.5em;
     grid-template-rows: .1fr 6fr .1fr;
@@ -55,14 +57,15 @@ main {
     text-shadow: 3px 3px 5px black;
 }
 
-.page-nav{
+.page-nav {
     align-self: center;
     /* margin-top:10em; */
 }
-.page-nav #next-page{
+
+.page-nav #next-page {
     font-family: var(--heading-font);
     float: right;
-    padding:2em;
+    padding: 2em;
     font-size: 1.5em;
 }
 
@@ -92,30 +95,31 @@ main {
 }
 
 #portfolios img:hover {
-    transition:.25s;
+    transition: .25s;
     opacity: 1;
 }
 
 #contact-container {
-    display:grid;
+    display: grid;
     grid-template-columns: .25fr 1fr .25fr;
-    grid-template-rows:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .social-container {
-    grid-row:1/2;
+    grid-row: 1/2;
     grid-column: 2/3;
     width: 100%;
-    display:flex;
+    display: flex;
     margin: 0 auto;
     text-align: center;
     align-items: center;
     padding: 2em;
     /* grid-template-columns:1fr 1fr 1fr; */
 }
+
 #social-container {
     width: 80%;
-    display:flex;
+    display: flex;
     margin: 0;
     /* text-align: center; */
     align-items: center;
@@ -123,26 +127,26 @@ main {
     /* grid-template-columns:1fr 1fr 1fr; */
 }
 
-.social-container img{
+.social-container img {
     width: 50%;
 }
 
-#social-container img{
-    width:50%;
-    padding-top:1em;
+#social-container img {
+    width: 50%;
+    padding-top: 1em;
 }
 
-.paragraph-container{
+.paragraph-container {
     grid-row: 2/3;
-    grid-column:2/3;
-    color:var(--secondary-color);
+    grid-column: 2/3;
+    color: var(--secondary-color);
     text-align: center;
     font-family: var(--paragraph-font);
-    font-size:1.3em;
+    font-size: 1.3em;
 }
 
 #about-container {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr .5fr 1fr;
     width: 100%;
 }
@@ -152,7 +156,7 @@ main {
     width: 100%;
 }
 
-#pic-container img{
+#pic-container img {
     width: 80%;
 }
 
@@ -168,34 +172,37 @@ main {
     margin-left: -3em;
 }
 
-#intro-container h2{
+#intro-container h2 {
     text-shadow: 2px 2px 5px black;
 }
 
-#ab-fb{
+#ab-fb {
     width: 110%;
 }
-#ab-ig{
+
+#ab-ig {
     width: 90%;
 }
-#ab-email{
+
+#ab-email {
     width: 100%;
 }
 
 
-.portfolio{
+.portfolio {
     max-width: 100%;
     width: 100%;
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-around; */
     /* align-items: center; */
-    padding:0 4px;
+    padding: 0 4px;
 
 
 }
-.portfolio-column img{
-    width:100%;
+
+.portfolio-column img {
+    width: 100%;
     /* flex: 25%; */
     /* padding:.5em; */
     vertical-align: middle;
@@ -235,8 +242,8 @@ main {
 
 
 
-.portfolio-column{
-    flex:22%;
+.portfolio-column {
+    flex: 22%;
     max-width: 25%;
     padding: 0 4px;
     /* padding-bottom: 75%; */
@@ -244,20 +251,128 @@ main {
 
 
 
-.portfolio > .portfolio-column {
-  padding: 0 8px;
+.portfolio>.portfolio-column {
+    padding: 0 8px;
 }
 
 .portfolio:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Create four equal columns that floats next to eachother */
 .portfolio-column {
-  float: left;
-  width: 25%;
+    float: left;
+    width: 25%;
+}
+
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
 }
 
 
@@ -266,11 +381,13 @@ main {
 
 
 
+.topnav {
+    display: none;
+}
 
-.topnav{display:none;}
 /* mobile */
 @media screen and (max-width:700px) {
-    #portfolios{
+    #portfolios {
         grid-row: 2/3;
         max-width: 90%;
         margin: 0 auto;
@@ -279,17 +396,17 @@ main {
         /* vertical-align: middle; */
         position: relative;
         text-align: center;
-        padding:0 4px;
+        padding: 0 4px;
         flex: 100%;
     }
 
-    #portfolios img{
+    #portfolios img {
         width: 100%;
         vertical-align: middle;
-        opacity:1;
+        opacity: 1;
     }
 
-    .portfolio_main{
+    .portfolio_main {
         background-color: var(--primary-color);
         padding: 1.5em;
         grid-template-rows: .1fr 11fr .1fr;
@@ -300,10 +417,12 @@ main {
         max-width: 100%;
     }
 
-    header #navbar{display: none;}
+    header #navbar {
+        display: none;
+    }
 
-    .topnav{
-        display:block;
+    .topnav {
+        display: block;
         overflow: hidden;
         /* background-color: var(--primary-color); */
         position: relative;
@@ -314,7 +433,9 @@ main {
         display: none;
     }
 
-    .topnav img{ width: 15%;}
+    .topnav img {
+        width: 15%;
+    }
 
     /* Style navigation menu links */
     .topnav a {
@@ -334,9 +455,10 @@ main {
         top: 0;
         margin-right: -2.5em;
     }
-    .fa-fa-bars img{
+
+    .fa-fa-bars img {
         width: 50%;
-        filter:invert(1);
+        filter: invert(1);
     }
 
     /* Add a grey background color on mouse-over */
@@ -350,133 +472,22 @@ main {
         /* background-color: var(--primary-color); */
         color: var(--primary-color);
     }
+
     #footer {
         grid-template-columns: .5fr 1fr .5fr;
     }
-    .home-footer{
+
+    .home-footer {
         display: flex;
         flex-direction: column;
         margin-top: -3em;
         padding: 0;
         font-size: 1.5em;
     }
-    .home-footer img{
+
+    .home-footer img {
         width: 30%;
     }
-    /* The Modal (background) */
-    .modal {
-    display: none;
-    position: fixed;
-    z-index: 4;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: var(--primary-color);
-    }
-
-    /* Modal Content */
-    .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 90%;
-    max-width: 600px;
-    /* height: 75%; */
-    }
-
-    /* The Close Button */
-    .close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-    }
-
-    /* Hide the slides by default */
-    .mySlides {
-    display: none;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    }
-
-    /* Caption text */
-    .caption-container {
-        display:none;
-    text-align: center;
-    background-color: var(--primary-color);
-    padding: 2px 16px;
-    color: white;
-    }
-
-    img.demo {
-    opacity: 0.6;
-    }
-
-    .active,
-    .demo:hover {
-    opacity: 1;
-    }
-
-    img.hover-shadow {
-    transition: 0.3s;
-    }
-
-    .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    
-
 }
 
 
@@ -552,11 +563,11 @@ header img {
     /* margin-top:.5em; */
 }
 
-.header{
+.header {
     background-color: var(--primary-color);
 }
 
-.footer{
+.footer {
     background-color: var(--accent2-color);
     color: var(--primary-color);
 }
