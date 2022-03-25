@@ -24,18 +24,8 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa-fa-bars"><img src="images/icons8-hamburger-menu-90(@3x).png" alt="="></i>
             </a>
-            
+
         </div>
-        <script defer>
-            function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-            }
-        </script>
         <nav id="navbar">
             <a id="logo-link" href="index.html">
                 <img class="logo" src="images/IMG_0194_inverted.png" alt="logo">
@@ -72,20 +62,19 @@
                 <img src="images/portfolio_images/IMG_2512-2.jpg" alt="Family Image">
                 <h3 class="portfolio_txt">Families</h3>
             </a>
-            <a href="#" >
+            <a href="#">
                 <img src="images/portfolio_images/MIKO4657.jpg" alt="couples image">
                 <h3 class="portfolio_txt">Couples</h3>
             </a>
-            <a href="#" >
+            <a href="#">
                 <img src="images/portfolio_images/20210905180352_IMG_7007.JPG" alt="pet image">
                 <h3 class="portfolio_txt">Pets</h3>
             </a>
-            <a href="#" >
-                <img src="images/portfolio_images/wedding.jpg"
-                    alt="wedding video image">
+            <a href="#">
+                <img src="images/portfolio_images/wedding.jpg" alt="wedding video image">
                 <h3 class="portfolio_txt">Wedding Videos</h3>
             </a>
-            <a href="#" >
+            <a href="#">
                 <img src="images/portfolio_images/MIKO2550.jpg" alt="other video image">
                 <h3 class="portfolio_txt">Other Videos</h3>
             </a>
@@ -109,7 +98,17 @@
         </nav>
     </footer>
 
-    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
 </body>
 
 </html>
