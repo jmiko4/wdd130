@@ -69,6 +69,13 @@ main {
     font-size: 1.5em;
 }
 
+.page-nav #prev-page {
+    font-family: var(--heading-font);
+    float:left;
+    padding: 2em;
+    font-size: 1.5em;
+}
+
 .title {
     grid-row: 1/2;
     text-align: center;
@@ -285,7 +292,7 @@ main {
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 3;
+    z-index: 4;
     /* Sit on top */
     padding-top: 100px;
     /* Location of the box */
@@ -307,9 +314,12 @@ main {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    /* width: 80%; */
+    /* max-width: 700px; */
+    height: 80%
+    /* max-height: 100%; */
 }
+
 
 /* Caption of Modal Image */
 #caption {
@@ -373,7 +383,9 @@ main {
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
     .modal-content {
-        width: 100%;
+        /* max-height: 100%; */
+        width: 95%;
+        height: auto;
     }
 }
 
@@ -466,7 +478,7 @@ main {
     /* Add a grey background color on mouse-over */
     .topnav a:hover {
         /* background-color: var(--primary-color); */
-        color: var(--primary-color);
+        color: var(--accent1-color);
     }
 
     /* Style the active link (or home/logo) */
@@ -482,7 +494,7 @@ main {
     .home-footer {
         display: flex;
         flex-direction: column;
-        margin-top: -3em;
+        /* margin-top: -3em; */
         padding: 0;
         font-size: 1.5em;
     }
@@ -490,6 +502,46 @@ main {
     .home-footer img {
         width: 30%;
     }
+
+    #about-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding:0;
+        text-align: center;
+    }
+    #intro-container{
+        margin: 0 auto;
+        /* text-align: center; */
+        padding: 0;
+    }
+    #social-container{
+        margin: 0 auto;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        /* margin-top: -3em; */
+        padding: 0;
+        font-size: 1.5em;
+    }
+
+    #contact-container{
+        margin: 0 auto;
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+    }
+    .social-container {
+        margin: 0 auto;
+        text-align: center;
+        padding:0;
+    }
+    .social-container .fb{
+        width: 105%;
+    }
+
 }
 
 
