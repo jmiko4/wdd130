@@ -62,7 +62,7 @@
         <h2 class="title">Portraits</h2>
         <div class="portfolio">
             <div class="portfolio-column">
-                <img class="myImg" src="images/portraits/IMG_2268.jpg" alt="portrait">
+                <img class="myImg" id="test" src="images/portraits/IMG_2268.jpg" alt="portrait">
                 <img class="myImg" src="images/portraits/20200919095311_IMG_0104-01.jpg" alt="portrait">
                 <img class="myImg" src="images/portraits/20210913203155_IMG_7148.jpg" alt="portrait">
                 <img class="myImg" src="images/portraits/IMG_0317-2.jpg" alt="portrait">
@@ -114,11 +114,12 @@
             var captionText = document.getElementById("caption");
             console.log(img);
             img.forEach(modal_function);
-            function modal_function(item){
-                
-                item.addEventListener("click",(e)=>{
 
-                    clickedImg= e.target;
+            function modal_function(item) {
+
+                item.addEventListener("click", (e) => {
+
+                    clickedImg = e.target;
                     modal.style.display = "block";
                     console.log(clickedImg);
                     modalImg.src = clickedImg.src;
@@ -190,7 +191,24 @@
             </a>
         </nav>
     </footer>
-
+    <script src="scripts/gsap.min.js"></script>
+    <script src="scripts/ScrollTrigger.min.js"></script>
+    <script>
+        const images = gsap.utils.toArray('.myImg');
+        images.forEach(img => {
+            gsap.to(img, {
+                opacity:1,
+                y:-20,
+                once:true,
+                // duration:1,
+                // delay:.25,
+                scrollTrigger: {
+                    trigger: img
+                    // scrub: .25
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>

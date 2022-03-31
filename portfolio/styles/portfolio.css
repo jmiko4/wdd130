@@ -166,6 +166,7 @@ main {
 
 #pic-container img {
     width: 80%;
+    border-radius: 20px;
 }
 
 .info-container {
@@ -218,6 +219,23 @@ main {
     /* animation: ease-in 1s; */
     /* transition: 0.5s; */
 }
+.myImg{
+    opacity: 0;
+    /* padding-right:200 px; */
+    /* overflow-x: 200; */
+}
+/* .myImg{
+    opacity: 0;
+    animation-name:fade;
+    animation-duration: 1s;
+    animation-timing-function:ease-in-out;
+    animation-delay: 2s;
+}
+@keyframes fade{
+    from { opacity:0;}
+    to { opacity:1}
+} */
+
 
 /* .lazyImageError img,
 .lazyImageWaiting img {
