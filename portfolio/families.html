@@ -181,6 +181,24 @@
         </nav>
     </footer>
 
+    <script src="scripts/gsap.min.js"></script>
+    <script src="scripts/ScrollTrigger.min.js"></script>
+    <script>
+        const images = gsap.utils.toArray('.myImg');
+        images.forEach(img => {
+            gsap.to(img, {
+                opacity:1,
+                y:-20,
+                once:true,
+                // duration:1,
+                // delay:.25,
+                scrollTrigger: {
+                    trigger: img
+                    // scrub: .25
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>
