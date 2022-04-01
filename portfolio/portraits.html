@@ -199,12 +199,12 @@
             gsap.to(img, {
                 opacity:1,
                 y:-20,
-                once:true,
+                // once:true,
                 // duration:1,
                 // delay:.25,
                 scrollTrigger: {
-                    trigger: img
-                    // scrub: .25
+                    trigger: img,
+                    scrub: true
                 }
             })
         });
