@@ -83,6 +83,7 @@ main {
     max-width: 100%;
     z-index: 2;
     text-shadow: 3px 3px 5px black;
+    margin-bottom: 2em;
 }
 
 #portfolios {
@@ -221,8 +222,6 @@ main {
 }
 .myImg{
     opacity: 0;
-    /* padding-right:200 px; */
-    /* overflow-x: 200; */
 }
 /* .myImg{
     opacity: 0;

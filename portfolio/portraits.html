@@ -196,17 +196,26 @@
     <script>
         const images = gsap.utils.toArray('.myImg');
         images.forEach(img => {
+            gsap.from(img,{
+                opacity: 0,
+                y:40
+            })
             gsap.to(img, {
+                scrollTrigger:img,
                 opacity:1,
-                y:-20,
-                // once:true,
+                y:0,
+                once:true,
+                duration:1
+                
                 // duration:1,
                 // delay:.25,
-                scrollTrigger: {
-                    trigger: img,
-                    scrub: true
-                }
+                // scrollTrigger: {
+                //     trigger: img,
+                //     // gsap.fromTo('myImg',{opacity:0},{opacity:1,duration:1});
+                //     scrub: true
+                // }
             })
+            
         });
     </script>
 </body>
