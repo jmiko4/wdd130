@@ -89,6 +89,12 @@ main {
   width: 80%;
   height: 80%;
 } */
+
+.video-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
 .youtube-video{
     margin: 0 auto;
 }
@@ -586,9 +592,15 @@ main {
         width: 480px;
         height: 270px;
     }
+
+
 }
 
-
+.portfolio-videos{
+    background-color: var(--primary-color);
+    padding: 1.5em;
+    /* grid-template-rows: .1fr 11fr .1fr; */
+}
 
 /* @media (max-width: 800px) {
     .portfolio {
