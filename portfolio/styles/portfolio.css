@@ -179,7 +179,7 @@ main {
 
 #about-container {
     display: grid;
-    grid-template-columns: 1fr .5fr 1fr;
+    grid-template-columns: 1fr .6fr 1fr;
     width: 100%;
 }
 
@@ -189,7 +189,7 @@ main {
 }
 
 #pic-container img {
-    width: 80%;
+    width: 70%;
     border-radius: 20px;
 }
 
