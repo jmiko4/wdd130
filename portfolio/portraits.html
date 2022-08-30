@@ -1,32 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portraits</title>
-    <link type="text/css" rel="stylesheet" href="styles/portfolio.css">
-</head>
-
-<body>
-
-    <header class="header">
-        <div class="topnav">
-            <a href="index.html" class="active"><img src="images/IMG_0194_inverted.png"></a>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-                <a href="index.html">Work</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa-fa-bars"><img src="images/icons8-hamburger-menu-90(@3x).png"></i>
-            </a>
-
-        </div>
-        <script>
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"/> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title>Portraits</title>         
+        <link type="text/css" rel="stylesheet" href="styles/portfolio.css"/> 
+    </head>     
+    <body> 
+        <header class="header"> 
+            <div class="topnav"> <a href="index.html" class="active"><img src="images/IMG_0194_inverted.png"/></a> 
+                <!-- Navigation links (hidden by default) -->                 
+                <div id="myLinks"> <a href="index.html">Work</a> <a href="about.html">About</a> <a href="contact.html">Contact</a> 
+                </div>                 
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa-fa-bars"><img src="images/icons8-hamburger-menu-90(@3x).png"/></i> </a> 
+            </div>             
+            <script>
             function myFunction() {
                 var x = document.getElementById("myLinks");
                 if (x.style.display === "block") {
@@ -35,78 +24,56 @@
                     x.style.display = "block";
                 }
             }
-        </script>
-
-        <nav id="navbar">
-            <a id="logo link" href="index.html">
-                <img class="logo" src="images/IMG_0194_inverted.png" alt="logo">
-            </a>
-            <div id="navbar-inner">
-                <a href="index.html">Work</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="https://www.instagram.com/mikophotovideo/?hl=en" target="_blank">
-                    <img src="images/instagram.png" alt="instagram icon">
-                </a>
-                <a href="https://www.facebook.com/mikophotovideo" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="mailto: justinmikolajcik@gmail.com" target="_blank">
-                    <img src="images/email.png" alt="email icon">
-                </a>
-            </div>
-        </nav>
-    </header>
-
-    <main class="portfolio_main">
-        <h2 class="title">Portraits</h2>
-        <div class="portfolio">
-            <div class="portfolio-column">
-                <img class="myImg" id="test" src="images/portraits/IMG_2268.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/20200919095311_IMG_0104-01.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/20210913203155_IMG_7148.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_0317-2.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_0381.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_0628-4.jpg" alt="portrait">
-            </div>
-            <div class="portfolio-column">
-                <img class="myImg" src="images/portraits/MIKO5549.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_8565 (2021_10_13 23_16_07 UTC).jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_2968-2.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_7434 (2021_10_13 23_16_07 UTC).jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_8057-2 (2021_10_13 23_16_07 UTC).jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_8083-2 (2021_10_13 23_16_07 UTC).jpg" alt="portrait">
-            </div>
-            <div class="portfolio-column">
-                <img class="myImg" src="images/portraits/MIKO2467.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_8585 (2021_10_13 23_16_07 UTC).jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_9063 (2021_10_19 18_03_03 UTC).jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_9470-3.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_9575.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/MIKO1519.jpg" alt="portrait">
-            </div>
-            <div class="portfolio-column">
-                <img class="myImg" src="images/portraits/MIKO5818.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/MIKO2613.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/MIKO2626.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/MIKO3419.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/MIKO3488.jpg" alt="portrait">
-                <img class="myImg" src="images/portraits/IMG_2853-2.jpg" alt="portrait">
-            </div>
-            <!-- -->
-        </div>
-        <div class="page-nav">
-            <a href="families.html" id="next-page">Families ></a>
-        </div>
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
-
-
-
-        <!-- <script defer>
+        </script>             
+            <nav id="navbar"> <a id="logo link" href="index.html"> <img class="logo" src="images/IMG_0194_inverted.png" alt="logo"/> </a> 
+                <div id="navbar-inner"> <a href="index.html">Work</a> <a href="about.html">About</a> <a href="contact.html">Contact</a> <a href="https://www.instagram.com/mikophotovideo/?hl=en" target="_blank"> <img src="images/instagram.png" alt="instagram icon"/> </a> <a href="https://www.facebook.com/mikophotovideo" target="_blank"> <img src="images/facebook.png" alt="fb icon"/> </a> <a href="mailto: justinmikolajcik@gmail.com" target="_blank"> <img src="images/email.png" alt="email icon"/> </a> 
+                </div>                 
+            </nav>             
+        </header>         
+        <main class="portfolio_main"> 
+            <h2 class="title">Portraits</h2> 
+            <div class="portfolio"> 
+                <div class="portfolio-column"> 
+                    <img class="myImg" id="test" src="images/portraits/IMG_2268.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/20200919095311_IMG_0104-01.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/20210913203155_IMG_7148.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_0317-2.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_0381.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_0628-4.jpg" alt="portrait" loading="lazy"/> 
+                </div>                 
+                <div class="portfolio-column"> 
+                    <img class="myImg" src="images/portraits/MIKO5549.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_8565 (2021_10_13 23_16_07 UTC).jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_2968-2.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_7434 (2021_10_13 23_16_07 UTC).jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_8057-2 (2021_10_13 23_16_07 UTC).jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_8083-2 (2021_10_13 23_16_07 UTC).jpg" alt="portrait" loading="lazy"/> 
+                </div>                 
+                <div class="portfolio-column"> 
+                    <img class="myImg" src="images/portraits/MIKO2467.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_8585 (2021_10_13 23_16_07 UTC).jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_9063 (2021_10_19 18_03_03 UTC).jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_9470-3.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_9575.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/MIKO1519.jpg" alt="portrait" loading="lazy"/> 
+                </div>                 
+                <div class="portfolio-column"> 
+                    <img class="myImg" src="images/portraits/MIKO5818.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/MIKO2613.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/MIKO2626.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/MIKO3419.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/MIKO3488.jpg" alt="portrait" loading="lazy"/> 
+                    <img class="myImg" src="images/portraits/IMG_2853-2.jpg" alt="portrait" loading="lazy"/> 
+                </div>                 
+                <!-- -->                 
+            </div>             
+            <div class="page-nav"> <a href="families.html" id="next-page">Families →</a> 
+            </div>             
+            <div id="myModal" class="modal"> <span class="close">&times;</span> 
+                <img class="modal-content" id="img01"/> 
+                <div id="caption"></div>                 
+            </div>             
+            <!-- <script defer>
             function openModal() {
             document.getElementById("myModal").style.display = "block";
             }
@@ -143,27 +110,15 @@
             dots[slideIndex-1].className += " active";
             captionText.innerHTML = dots[slideIndex-1].alt;
             }
-        </script> -->
-    </main>
-
-    <footer class="footer">
-        <nav>
-            <a id="about" href="about.html">About</a>
-            <a id="contact" href="contact.html">Contact</a>
-            <a class="ig" href="https://www.instagram.com/mikophotovideo/?hl=en" target="_blank" id="ig">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
-            <a class="fb" href="https://www.facebook.com/mikophotovideo" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a class="email" href="mailto: justinmikolajcik@gmail.com" target="_blank">
-                <img src="images/email.png" alt="email icon">
-            </a>
-        </nav>
-    </footer>
-    <script src="scripts/gsap.min.js"></script>
-    <script src="scripts/ScrollTrigger.min.js"></script>
-    <script>
+        </script> -->             
+        </main>         
+        <footer class="footer"> 
+            <nav> <a id="about" href="about.html">About</a> <a id="contact" href="contact.html">Contact</a> <a class="ig" href="https://www.instagram.com/mikophotovideo/?hl=en" target="_blank" id="ig"> <img src="images/instagram.png" alt="instagram icon"/> </a> <a class="fb" href="https://www.facebook.com/mikophotovideo" target="_blank"> <img src="images/facebook-new.png" alt="fb icon"/> </a> <a class="email" href="mailto: justinmikolajcik@gmail.com" target="_blank"> <img src="images/email.png" alt="email icon"/> </a> 
+            </nav>             
+        </footer>         
+        <script src="scripts/gsap.min.js"></script>         
+        <script src="scripts/ScrollTrigger.min.js"></script>         
+        <script>
         const images = gsap.utils.toArray('.myImg');
         images.forEach(img => {
             gsap.from(img, {
@@ -187,8 +142,8 @@
             })
 
         });
-    </script>
-    <script>
+    </script>         
+        <script>
         // Get the modal
         var modal = document.getElementById("myModal");
 
@@ -218,7 +173,6 @@
         span.onclick = function () {
             modal.style.display = "none";
         }
-    </script>
-</body>
-
+    </script>         
+    </body>     
 </html>
